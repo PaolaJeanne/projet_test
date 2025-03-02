@@ -1,0 +1,56 @@
+header {
+    background-color: #007bff; /* Couleur de fond bleue */
+    padding: 1rem 2rem; /* Espacement interne */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style pour la barre de navigation */
+header nav {
+    display: flex;
+    justify-content: space-between; /* Logo à gauche, liens à droite */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style pour le logo */
+header nav .logo img {
+    height: 40px; /* Ajustez la hauteur du logo */
+    width: auto; /* Garde le ratio du logo */
+}
+
+/* Style pour les liens */
+header nav .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espacement entre les liens */
+}
+
+header nav .nav-links a {
+    color: white; /* Texte blanc */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transition fluide */
+}
+
+header nav .nav-links a:hover {
+    color: #f8f9fa; /* Changement de couleur au survol */
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Style pour le bouton de déconnexion */
+header nav .nav-links button {
+    background-color: #dc3545; /* Rouge pour le bouton de déconnexion */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+header nav .nav-links button:hover {
+    background-color: #c82333; /* Rouge plus foncé au survol */
+}

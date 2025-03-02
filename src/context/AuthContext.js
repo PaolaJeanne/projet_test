@@ -1,13 +1,14 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';  // Importez useNavigate
-import apiClient from '../services/api';
+import { useNavigate } from 'react-router-dom';  
+import apiClient from '../services/api'; 
+
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState(null);
     const [loading, setLoading] = useState(true);
-    const navigate = useNavigate();  // Remplacez useHistory par useNavigate
+    const navigate = useNavigate();  
 
     useEffect(() => {
         const token = localStorage.getItem('token');

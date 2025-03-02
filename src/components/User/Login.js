@@ -1,17 +1,19 @@
 import React, { useState, useContext } from 'react';
-import { useNavigate } from 'react-router-dom'; // Remplacez useHistory par useNavigate
-import { AuthContext } from './context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+import {AuthContext} from '../../context/AuthContext';
+import '../../styles/Login.css'; 
+
 
 const Login = () => {
     const [credentials, setCredentials] = useState({ email: '', password: '' });
     const { login } = useContext(AuthContext);
-    const navigate = useNavigate(); // Utilisez useNavigate
+    const navigate = useNavigate(); 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             await login(credentials);
-            navigate('/dashboard'); // Utilisez navigate pour rediriger
+            navigate('/dashboard'); 
         } catch (error) {
             console.error('Login failed', error);
         }

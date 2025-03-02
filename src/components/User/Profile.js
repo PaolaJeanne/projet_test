@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
-import { AuthContext } from './context/AuthContext';
-import apiClient from '../../services/api';
+import { AuthContext } from '../../context/AuthContext'; 
+import apiClient from '../../services/api'; 
 import { TextField, Button, Container } from '@mui/material';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import '../../styles/Profile.css';
+
 
 const UserProfile = () => {
     const { currentUser } = useContext(AuthContext);

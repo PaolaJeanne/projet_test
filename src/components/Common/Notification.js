@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { AuthContext } from '../../contexts/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 import io from 'socket.io-client';
+import '../../styles/Notification.css';
+
+
 
 const socket = io('http://localhost:8000');
 

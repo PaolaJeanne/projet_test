@@ -2,7 +2,7 @@ import React from 'react';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import { Button, Container } from '@mui/material';
-import apiClient from '../../services/api'; // Assurez-vous d'importer votre client API
+import apiClient from '../services/api'; 
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 

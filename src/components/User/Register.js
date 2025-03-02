@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Remplacez useHistory par useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import apiClient from '../../services/api';
+import '../../styles/Register.css';
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -10,15 +11,15 @@ const Register = () => {
         email: '',
         password: '',
         phone_number: '',
-        role: 'CLIENT', // Par défaut, le rôle est "CLIENT"
+        role: 'CLIENT', 
     });
-    const navigate = useNavigate(); // Utilisez useNavigate
+    const navigate = useNavigate(); 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             await apiClient.post('/accounts/register/', formData);
-            navigate('/login'); // Utilisez navigate pour rediriger
+            navigate('/login'); 
         } catch (error) {
             console.error('Registration failed', error);
         }
