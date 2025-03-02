@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import apiClient from '../../services/api';
+import './PaymentHistory.css'; // Importez le fichier CSS
 
 const PaymentHistory = () => {
     const [payments, setPayments] = useState([]);
@@ -15,12 +16,13 @@ const PaymentHistory = () => {
     }, [currentUser]);
 
     return (
-        <div>
+        <div className="payment-history">
             <h2>Historique des paiements</h2>
             <ul>
                 {payments.map(payment => (
                     <li key={payment.id}>
-                        {payment.amount} € - {new Date(payment.date).toLocaleString()}
+                        <span className="amount">{payment.amount} €</span>
+                        <span className="date">{new Date(payment.date).toLocaleString()}</span>
                     </li>
                 ))}
             </ul>

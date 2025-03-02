@@ -1,0 +1,75 @@
+/* Style pour le conteneur principal */
+.availability-manager {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le titre */
+.availability-manager h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.75rem;
+}
+
+/* Style pour la liste des créneaux */
+.availability-manager ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour chaque créneau */
+.availability-manager ul li {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.availability-manager ul li:hover {
+    background-color: #e9ecef;
+}
+
+/* Style pour le formulaire d'ajout de créneau */
+.availability-manager .add-slot-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Style pour les champs de formulaire */
+.availability-manager .add-slot-form select,
+.availability-manager .add-slot-form input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Style pour le bouton d'ajout */
+.availability-manager .add-slot-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.availability-manager .add-slot-form button:hover {
+    background-color: #0056b3;
+}

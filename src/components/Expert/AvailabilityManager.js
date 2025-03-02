@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import apiClient from '../../services/api';
+import '../../styles/AvailabilityManager.css'; 
 
 const AvailabilityManager = () => {
     const [slots, setSlots] = useState([]);
@@ -25,7 +26,7 @@ const AvailabilityManager = () => {
     };
 
     return (
-        <div>
+        <div className="availability-manager">
             <h2>Gestion des disponibilités</h2>
             <ul>
                 {slots.map(slot => (
@@ -34,7 +35,7 @@ const AvailabilityManager = () => {
                     </li>
                 ))}
             </ul>
-            <div>
+            <div className="add-slot-form">
                 <select
                     value={newSlot.day_of_week}
                     onChange={(e) => setNewSlot({ ...newSlot, day_of_week: parseInt(e.target.value) })}

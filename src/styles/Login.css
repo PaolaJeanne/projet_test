@@ -44,3 +44,19 @@ form button {
 form button:hover {
     background-color: #0056b3;
 }
+
+/* Style pour le lien d'inscription */
+form .register-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+form .register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+form .register-link a:hover {
+    text-decoration: underline;
+}

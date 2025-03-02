@@ -15,16 +15,18 @@ const App = () => (
     <Router>
         <AuthProvider>
             <Header /> {/* Add the Header component here */}
-            <Routes>
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/register" element={<RegisterPage />} />
-                <Route path="/dashboard-client" element={<DashboardClient />} />
-                <Route path="/dashboard-expert" element={<DashboardExpert />} />
-                <Route path="/appointments" element={<AppointmentPage />} />
-                <Route path="/profile" element={<ProfilePage />} />
-                <Route path="/notifications" element={<NotificationPage />} />
-                <Route path="*" element={<Navigate to="/login" />} />
-            </Routes>
+            <div className="App">
+                <Routes>
+                    <Route path="/login" element={<LoginPage />} />
+                    <Route path="/register" element={<RegisterPage />} />
+                    <Route path="/dashboard-client" element={<DashboardClient />} />
+                    <Route path="/dashboard-expert" element={<DashboardExpert />} />
+                    <Route path="/appointments" element={<AppointmentPage />} />
+                    <Route path="/profile" element={<ProfilePage />} />
+                    <Route path="/notifications" element={<NotificationPage />} />
+                    <Route path="*" element={<Navigate to="/login" />} />
+                </Routes>
+            </div>
         </AuthProvider>
     </Router>
 );

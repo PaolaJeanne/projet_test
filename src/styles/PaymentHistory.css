@@ -1,5 +1,5 @@
 /* Style pour le conteneur principal */
-.notification-container {
+.payment-history {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1.5rem;
@@ -9,22 +9,22 @@
 }
 
 /* Style pour le titre */
-.notification-container h2 {
+.payment-history h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #333;
     font-size: 1.75rem;
 }
 
-/* Style pour la liste des notifications */
-.notification-container ul {
+/* Style pour la liste des paiements */
+.payment-history ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Style pour chaque notification */
-.notification-container ul li {
+/* Style pour chaque paiement */
+.payment-history ul li {
     padding: 1rem;
     margin: 0.5rem 0;
     background-color: #f8f9fa;
@@ -35,18 +35,17 @@
     transition: background-color 0.3s ease;
 }
 
-.notification-container ul li:hover {
+.payment-history ul li:hover {
     background-color: #e9ecef;
 }
 
-/* Style pour les notifications non lues */
-.notification-container ul li.unread {
-    background-color: #e3f2fd;
-    border-color: #90caf9;
+/* Style pour le montant et la date */
+.payment-history ul li .amount {
+    font-weight: bold;
+    color: #007bff;
 }
 
-/* Style pour le timestamp (si vous ajoutez un timestamp) */
-.notification-container ul li .timestamp {
+.payment-history ul li .date {
     display: block;
     font-size: 0.875rem;
     color: #666;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import apiClient from '../services/api';
+import './ExpertProfile.css'; // Importez le fichier CSS
 
 const ExpertProfile = () => {
     const { currentUser } = useContext(AuthContext);
@@ -26,7 +27,7 @@ const ExpertProfile = () => {
     };
 
     return (
-        <div>
+        <div className="expert-profile">
             <h2>Profil expert</h2>
             <input
                 type="text"
