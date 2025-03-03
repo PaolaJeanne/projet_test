@@ -2,8 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import { AuthContext } from './context/AuthContext';
-import apiClient from '../../services/api';
+import { AuthContext } from '../../context/AuthContext'; // Correction du chemin d'importation
+import apiClient from '../../services/api'; // Vérification de l'importation
 
 const localizer = momentLocalizer(moment);
 

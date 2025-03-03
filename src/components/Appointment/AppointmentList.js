@@ -3,7 +3,6 @@ import { AuthContext } from '../../context/AuthContext';
 import apiClient from '../../services/api'; 
 import '../../styles/AppointmentList.css';
 
-
 const AppointmentList = () => {
     const [appointments, setAppointments] = useState([]);
     const { currentUser } = useContext(AuthContext);

@@ -6,7 +6,6 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import '../../styles/AppointmentForm.css';
 
-
 const AppointmentForm = ({ expertId }) => {
     const { currentUser } = useContext(AuthContext);
 

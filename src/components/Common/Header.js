@@ -10,14 +10,12 @@ const Header = () => {
     return (
         <header>
             <nav>
-                {/* Logo à gauche */}
                 <div className="logo">
                     <Link to="/">
                         <img src={logo} alt="Logo" />
                     </Link>
                 </div>
 
-                {/* Liens à droite */}
                 <div className="nav-links">
                     {currentUser ? (
                         <>

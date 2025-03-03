@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import apiClient from '../../services/api';
-import './PaymentHistory.css'; // Importez le fichier CSS
+import './PaymentHistory.css'; 
 
 const PaymentHistory = () => {
     const [payments, setPayments] = useState([]);

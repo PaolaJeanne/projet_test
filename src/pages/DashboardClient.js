@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../context/AuthContext'; // Corrigez le chemin
+import { AuthContext } from '../context/AuthContext'; 
 import AppointmentList from '../components/Appointment/AppointmentList';
 import Profile from '../components/User/Profile';
 

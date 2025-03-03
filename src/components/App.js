@@ -8,13 +8,13 @@ import DashboardExpert from '../pages/DashboardExpert';
 import AppointmentPage from '../pages/AppointmentPage';
 import ProfilePage from '../pages/ProfilePage';
 import NotificationPage from '../pages/NotificationPage'; 
-import Header from './Common/Header'; // Import the Header component
+import Header from './Common/Header'; 
 import '../styles/App.css'; 
 
 const App = () => (
     <Router>
         <AuthProvider>
-            <Header /> {/* Add the Header component here */}
+            <Header /> 
             <div className="App">
                 <Routes>
                     <Route path="/login" element={<LoginPage />} />
